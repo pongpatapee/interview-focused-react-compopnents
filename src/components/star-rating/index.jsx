@@ -22,7 +22,7 @@ const StarRating = ({ numStars = 5 }) => {
   };
 
   return (
-    <div class="container">
+    <div className="container">
       <div>Star Rating</div>
       <div>
         {/* interesting pattern */}
