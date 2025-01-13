@@ -30,6 +30,8 @@ const RandomColor = () => {
   };
 
   useEffect(() => {
+    // instead of generating new color
+    // can do conversion between hex and rgb values
     if (colorType === "hex") {
       handleGenerateRandomHex();
     } else {
