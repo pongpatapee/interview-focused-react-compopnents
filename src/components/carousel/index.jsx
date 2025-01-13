@@ -16,8 +16,6 @@ const Carousel = ({ apiUrl, page = 1, limit = 5 }) => {
     setImgIdx((prev) => (prev > 0 ? prev - 1 : images.length - 1));
   };
 
-  console.log(imgIdx);
-
   const fetchImages = async () => {
     try {
       setLoading(true);
