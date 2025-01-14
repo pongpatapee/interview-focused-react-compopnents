@@ -1,0 +1,7 @@
+.menu-item-label {
+  display: flex;
+}
+
+.clickable {
+  cursor: pointer;
+}
