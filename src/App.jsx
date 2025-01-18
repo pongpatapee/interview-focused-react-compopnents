@@ -9,6 +9,7 @@ import treeNavData from "./components/tree-view/data";
 import MyThemedComponent from "./my-components/theme-switcher";
 import { ThemeProvider } from "./my-components/theme-switcher/themeContext";
 import SearchBar from "./predro-tech-interivew-components/SearchBar";
+import DebouncedSearch from "./predro-tech-interivew-components/DebouncedSearch";
 
 function App() {
   return (
@@ -29,7 +30,9 @@ function App() {
       {/*   <MyThemedComponent /> */}
       {/* </ThemeProvider> */}
 
-      <SearchBar />
+      {/* <SearchBar /> */}
+
+      <DebouncedSearch />
     </>
   );
 }
