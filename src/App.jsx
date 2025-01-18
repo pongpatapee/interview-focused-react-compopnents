@@ -10,6 +10,7 @@ import MyThemedComponent from "./my-components/theme-switcher";
 import { ThemeProvider } from "./my-components/theme-switcher/themeContext";
 import SearchBar from "./predro-tech-interivew-components/SearchBar";
 import DebouncedSearch from "./predro-tech-interivew-components/DebouncedSearch";
+import PhoneNumberInput from "./predro-tech-interivew-components/PhoneNumberInput";
 
 function App() {
   return (
@@ -32,7 +33,9 @@ function App() {
 
       {/* <SearchBar /> */}
 
-      <DebouncedSearch />
+      {/* <DebouncedSearch /> */}
+
+      <PhoneNumberInput />
     </>
   );
 }
