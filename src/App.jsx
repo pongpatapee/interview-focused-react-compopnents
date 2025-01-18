@@ -11,6 +11,7 @@ import { ThemeProvider } from "./my-components/theme-switcher/themeContext";
 import SearchBar from "./predro-tech-interivew-components/SearchBar";
 import DebouncedSearch from "./predro-tech-interivew-components/DebouncedSearch";
 import PhoneNumberInput from "./predro-tech-interivew-components/PhoneNumberInput";
+import DebouncedSearch2 from "./predro-tech-interivew-components/DebouncedSearch2";
 
 function App() {
   return (
@@ -34,8 +35,9 @@ function App() {
       {/* <SearchBar /> */}
 
       {/* <DebouncedSearch /> */}
+      <DebouncedSearch2 />
 
-      <PhoneNumberInput />
+      {/* <PhoneNumberInput /> */}
     </>
   );
 }
