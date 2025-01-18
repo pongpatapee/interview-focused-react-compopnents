@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const SearchBar = () => {
   const fruits = [
     "Apple",
@@ -14,9 +16,29 @@ const SearchBar = () => {
     "Grapefruit",
   ];
 
+  const [searchFruits, setSearchFruit] = useState([...fruits]);
+
+  const handleOnChange = (event) => {
+    setSearchFruit(
+      fruits.filter((fruit) =>
+        fruit.toLowerCase().startsWith(event.target.value.toLowerCase()),
+      ),
+    );
+  };
+
   return (
     <div>
-      <input type="text" placeholder="Search here..." />
+      <input
+        type="text"
+        placeholder="Search here..."
+        onChange={handleOnChange}
+      />
+
+      <ul>
+        {searchFruits.map((fruit) => (
+          <li>{fruit}</li>
+        ))}
+      </ul>
     </div>
   );
 };
